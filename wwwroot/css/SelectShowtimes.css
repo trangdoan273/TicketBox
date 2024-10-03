@@ -1,0 +1,121 @@
+body{
+    background-color: #0D111A;
+}
+.movie{
+    background-color:#0D111A;
+    width: 100%;
+}
+
+.movie-selection .movie-part .movie-head{
+    padding: 20px;
+    border: 1px solid #3a3a3a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.movie-head .movie-image .movie-img{
+    width: 200px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.movie-head .movie-info .movie-name{
+    color: #EFC26D;
+    text-transform: uppercase;
+    font-size: 20.77px;
+    font-weight: bold;
+}
+
+.movie-head .movie-info .movie-description{
+    color: white;
+}
+
+.movie-head .movie-info .movie-detail{
+    color: white;
+    margin-bottom: 19px;
+}
+
+.movie-info .change-movie-link .change-movie-btn{
+    color: #EFC26D;
+    border: 1px solid #A1331C;
+    background-color: #0D111A;
+    border-radius: 3.5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 17.79px;
+    font-weight: bold;
+}
+
+.movie-info .change-movie-link .change-movie-btn:hover{
+    color:#EFC26D;
+    background-color: #A1331C;
+}
+
+.movie-selection .movie-part .date-selection{
+    padding:15px 0;
+    border: 1px solid #3a3a3a;
+}
+
+.movie-part .date-selection .date-in-week{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-selection .date-in-week .date{
+    margin-right: 20px; 
+}
+
+#dateClick.clicked{
+    color: #A1331C;
+}
+
+.date-in-week .date a{
+    color:#EFC26D;
+    font-size: 20px;
+}
+.date-in-week .date a:hover{
+    color:#A1331C;
+}
+
+.date-in-week .date a .big-size{
+    font-size: 36px;
+}
+
+.movie-part .cinema-selection .cinema-info{
+    padding:15px 0;
+    border: 1px solid #3a3a3a;
+}
+
+.movie-part .cinema-selection .cinema-name{
+    color: #EFC26D;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.time-selection .time{
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.time-selection .time .time-btn{
+    color: #EFC26D;
+    font-size: 15px;
+    font-weight: lighter;
+    background-color: #0D111A;
+    border-radius: 3.5px;
+    border: 1px solid #EFC26D;
+    padding: 5px 10px;
+}
+
+.time-selection .time .time-btn:hover{
+    background-color: #A1331C;
+}
+
+
+

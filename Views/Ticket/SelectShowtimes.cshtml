@@ -1,0 +1,100 @@
+@{
+    ViewData["Title"] = "Chọn Lịch Chiếu";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/SelectShowtimes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="movie-selection">
+        <div class="movie-part">
+            <div class="movie-head">
+                <a href="#" class="movie-image">
+                    <img src="../assets/Sói bảnh.jpg" class="movie-img">
+                </a>
+                <div class="movie-info">
+                    <p class="movie-name">200% wolf: sói bảnh</p>
+                    <p class="movie-description">Khi mong muốn sai lầm của Freddy Lupin biến anh thành người sói và gửi
+                        một yêu tinh mặt trăng tinh quái xuống Trái Đất, Freddy phải khôi phục lại trật tự vũ trụ trước
+                        khi Trái Đất và Mặt Trăng va chạm với nhau.</p>
+                    <div class="movie-detail">
+                        <p class="movie-director">Đạo diễn: Alexs Stadermann</p>
+                        <p class="movie-actor">Diễn viên: IIai Swindells, Jennifer Saunders</p>
+                        <p class="movie-type">Thể loại: Animation</p>
+                        <p class="movie-showtimes">Khởi chiếu: 30/08/2024 | Thời lượng: 98 phút</p>
+                    </div>
+                    <a href="#" class="change-movie-link">
+                        <button class="change-movie-btn">Chọn phim khác</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="date-selection">
+                <ul class="date-in-week">
+                    <li class="date"><a href="#" id="dateClick"><span class="big-size">11</span>/09 - T2</a></li>
+                    <li class="date"><a href="#"><span class="big-size">12</span>/09 - T3</a></li>
+                    <li class="date"><a href="#"><span class="big-size">13</span>/09 - T4</a></li>
+                    <li class="date"><a href="#"><span class="big-size">14</span>/09 - T5</a></li>
+                    <li class="date"><a href="#"><span class="big-size">15</span>/09 - T6</a></li>
+                    <li class="date"><a href="#"><span class="big-size">16</span>/09 - T7</a></li>
+                    <li class="date"><a href="#"><span class="big-size">17</span>/09 - CN</a></li>
+                </ul>
+            </div>
+
+            <div class="cinema-selection">
+                <div class="cinema-info">
+                    <p class="cinema-name">Fast Ticket Phạm Ngọc Thạch</p>
+                    <div class="time-selection">
+                        <a asp-controller="Ticket" asp-action="SelectSeat" class="time">
+                            <button class="time-btn">09:25 AM</button>
+                        </a>
+                        <a href="#" class="time">
+                            <button class="time-btn">13:25 PM</button>
+                        </a>
+                        <a href="#" class="time">
+                            <button class="time-btn">15:45 PM</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="cinema-info">
+                    <p class="cinema-name">Fast Ticket Royal City</p>
+                    <div class="time-selection">
+                        <a href="#" class="time">
+                            <button class="time-btn">10:00 AM</button>
+                        </a>
+                        <a href="#" class="time">
+                            <button class="time-btn">12:05 PM</button>
+                        </a>
+                        <a href="#" class="time">
+                            <button class="time-btn">14:15 PM</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="cinema-info">
+                    <p class="cinema-name">Fast Ticket Aeon Mall Hà Đông</p>
+                    <div class="time-selection">
+                        <a href="#" class="time">
+                            <button class="time-btn">10:00 AM</button>
+                        </a>
+                        <a href="#" class="time">
+                        <button class="time-btn">17:00 PM</button>
+                        </a>
+                        <a href="#" class="time">
+                        <button class="time-btn">21:20 PM</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/SelectShowtimes.js"></script>
+</body>
+
+</html>

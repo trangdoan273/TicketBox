@@ -1,0 +1,203 @@
+body{
+    background-color: #0D111A;
+}
+
+.seat-container{
+    display: flex;
+}
+.seat-container .screen{
+    width:70%;
+    margin-left: 10px;
+}
+
+.seat-container .screen .screen-label{
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+.seats{
+    display: flex;
+    flex-direction: row;
+}
+
+.seats .col .seat{
+    margin: 10px;
+}
+
+.col .seat .seat-btn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #EFC26D;
+    border: 1px solid transparent;
+    text-transform:uppercase;
+}
+
+.col .seat .seat-btn-vip{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #A1331C;
+    border: 1px solid transparent;
+    text-transform:uppercase;
+}
+
+.col .seat .seat-btn-booked{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+    border: 1px solid transparent;
+    text-transform:uppercase;
+}
+
+.col .seat .seat-btn-sb{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #D7436F;
+    border: 1px solid transparent;
+    text-transform:uppercase;
+}
+
+#seatClick.clicked{
+    color:white;
+    background-color: #3A8F38;
+}
+
+.seat-container .ticket{
+    align-items:flex-start;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.seat-container .ticket .ticket-info{
+    padding: 40px;
+    background-color: #0D111A;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+}
+
+.seat-container .ticket .ticket-info .cinema-name{
+    color: #EFC26D;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.seat-container .ticket .ticket-info .cinema-name span{
+    color: white;
+}
+
+.ticket .ticket-info .cinema-info{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket .ticket-info .cinema-info .room{
+    margin-right: 10px;
+}
+
+
+.ticket .ticket-info .cinema-info .date{
+    margin-right: 10px;
+}
+
+.ticket .ticket-info .movie-name{
+    font-size: 20.77px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFC26D;
+}
+
+.ticket .ticket-info .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.ticket-info .book{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ticket-info .book-ticket-link .book-ticket-btn{
+    color: #A1331C;
+    background-color: #EFC26D;
+    border: 1px solid transparent;
+    border-radius: 3.5px;
+    padding: 10px 20px;
+    font-size: 17.79px;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.ticket-info .book-ticket-link .book-ticket-btn:hover{
+    color: #EFC26D;
+    background-color: #A1331C;
+}
+ 
+.seat-container .ticket .seat-info{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.seat-info .row .booked{
+    height: 50px;
+    width: 50px;
+    background-color: #d9d9d9;
+    border: 1px solid transparent;
+}
+
+.seat-info .row .normal{
+    height: 50px;
+    width: 50px;
+    background-color: #EFC26D;
+    border: 1px solid transparent;
+}
+
+.seat-info .row .vip{
+    height: 50px;
+    width: 50px;
+    background-color: #A1331C;
+    border: 1px solid transparent;
+}
+
+.seat-info .row .booking{
+    height: 50px;
+    width: 50px;
+    background-color: #3A8F38;
+    border: 1px solid transparent;
+}
+
+.seat-info .row .sb{
+    height: 50px;
+    width: 50px;
+    background-color: #D7436F;
+    border: 1px solid transparent;
+}
+
+.seat-info .row .seat-status{
+    color: white;
+    text-align: center;
+}
+

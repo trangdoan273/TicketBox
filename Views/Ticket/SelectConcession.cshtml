@@ -1,0 +1,92 @@
+@{
+    ViewData["Title"] = "Chọn Bỏng Nước";
+}
+
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/SelectConcession.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="concession-container">
+        <div class="concession">
+            <div class="combo">
+                <div class="combo-details">
+                    <div class="combo-details">
+                        <img src="../assets/combo1.png" class="combo-img">
+                    </div>
+                    <div class="combo-description">
+                        <p class="concession-name">ol aqua combo - 80.100</p>
+                        <p class="concession-detail">01 bắp lớn vị ngọt + Aquafina</p>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="combo">
+                <div class="combo-details">
+                    <div class="combo-image">
+                        <img src="../assets/combo2.png" class="combo-img">
+                    </div>
+                    <div class="combo-description">
+                        <p class="concession-name">ol single combo 22oz - 84.600</p>
+                        <p class="concession-detail">01 bắp lớn vị ngọt + 01 nước vừa</p>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="combo">
+                <div class="combo-details">
+                    <div class="combo-image">
+                        <img src="../assets/combo3.png" class="combo-img">
+                    </div>
+                    <div class="combo-description">
+                        <p class="concession-name">ol couple combo 22oz - 115.200</p>
+                        <p class="concession-detail">01 bắp lớn vị ngọt + 02 nước vừa</p>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="ticket">
+            <div class="ticket-info">
+                <p class="cinema-name">Fast Ticket <span>Phạm Ngọc Thạch</span></p>
+                <div class="cinema-info">
+                    <p class="room">Phòng chiếu 1</p>
+                    <p class="date">11-09-24</p>
+                    <p class="hour">09:25~11:03</p>
+                </div>
+                <p class="movie-name">200% wolf: sói bảnh</p>
+                <div class="price">
+                    <div class="ticket-price">
+                        <p class="seat-numb">1 x ghế I5</p>
+                        <p class="concession-price">1 x OL AQUA COMBO</p>
+                    </div>
+                    <div class="ticket-price">
+                        <p class="seat-price">70000VND</p>
+                        <p class="concession-numb">80100VND</p>
+
+                    </div>
+                </div>
+                <div class="book">
+                    <a href="#" class="book-ticket-link">
+                        <button type="submit" class="book-ticket-btn" id="bookClick">Thanh Toán</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/Selectconcession.js"></script>
+</body>
+
+</html>

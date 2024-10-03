@@ -1,0 +1,138 @@
+body{
+    background-color: #0D111A;
+}
+
+.concession-container{
+    display: flex;
+}
+
+.concession-container .concession {
+    width: 70%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.concession-container .concession .combo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.combo-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combo-img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.combo-description{
+    color: white;
+}
+
+.concession-name{
+    font-size: 20px;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.concession-detail{
+    font-size: 15px;
+}
+
+.quantity input{
+    width: 50px;
+    height: 50px;
+    outline: none;
+    color: #EFC26D;
+    background-color: #0D111A;
+    border: #0D111A;
+}
+
+ .ticket .ticket-info{
+    padding: 40px;
+    background-color: #0D111A;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+}
+
+ .ticket .ticket-info .cinema-name{
+    color: #EFC26D;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.ticket .ticket-info .cinema-name span{
+    color: white;
+}
+
+.ticket .ticket-info .cinema-info{
+    display: flex;
+    color: white;
+    font-size: 15px;
+}
+
+.ticket .ticket-info .cinema-info .room{
+    margin-right: 10px;
+}
+
+
+.ticket .ticket-info .cinema-info .date{
+    margin-right: 10px;
+}
+
+.ticket .ticket-info .movie-name{
+    font-size: 20.77px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFC26D;
+}
+
+.ticket .ticket-info .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.ticket-info .book{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ticket-info .book-ticket-link .book-ticket-btn{
+    color: #A1331C;
+    background-color: #EFC26D;
+    border: 1px solid transparent;
+    border-radius: 3.5px;
+    padding: 10px 20px;
+    font-size: 17.79px;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.ticket-info .book-ticket-link .book-ticket-btn:hover{
+    color: #EFC26D;
+    background-color: #A1331C;
+}
+
+.ticket-info .book-ticket-link .book-ticket-btn.clicked{
+    color: #EFC26D;
+    background-color: #A1331C;
+}
