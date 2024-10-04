@@ -29,6 +29,7 @@
                         </div>
                     }
                 </div>
+
                 <div class="swiper-pagination"></div>
                 <div class="btn-arrow swiper-button-prev"></div>
                 <div class="btn-arrow swiper-button-next"></div>
@@ -52,17 +53,20 @@
                                         <img src="@movie.MovieImage" class="movie-img">
                                     </a>
                                 </div>
+
                                 <div class="movie-content">
                                     <p class="movie-label">@movie.Label</p>
                                     <p class="movie-language">@movie.MovieLanguage</p>
                                     <p class="movie-format">@movie.MovieFormat</p>
                                 </div>
+
                                 <div class="movie-title">
                                     <a href="#" class="movie-title-link">
                                         <p class="movie-name">@movie.MovieName</p>
                                         <p class="movie-type">@movie.Genre</p>
                                     </a>
                                 </div>
+
                                 <a asp-controller="Ticket" asp-action="SelectShowtimes" class="buy-ticket-link">
                                     <button class="buy-ticket">
                                         <i class="fa-solid fa-ticket"></i>
@@ -72,6 +76,7 @@
                             </div>
                         }
                     </div>
+                    
                     <div class="swiper-pagination"></div>
                     <div class="swiper-btn swiper-button-prev"></div>
                     <div class="swiper-btn swiper-button-next"></div>

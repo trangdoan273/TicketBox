@@ -19,20 +19,20 @@ body{
     color: #EFC26D;
  }
 
- .user-profile-container .user-select{
+.user-profile-container .user-select{
     display: flex;
     flex-direction: column;
     width: 400px;
     margin-top: 10px;
  }
 
- .general-info-link{
+.general-info-link{
     margin-right: 20px;
     margin-left: 20px;
 
  }
 
-.general-info-link .general-info-btn{
+ .general-info-link .general-info-btn{
     color: #EFC26D;
     background-color: #A1331C;
     width: 100%;
@@ -43,7 +43,7 @@ body{
     border: 1px solid #3a3a3a;
  }
 
- .detail-info-btn{
+.detail-info-btn{
     color: #A1331C;
     background-color: #EFC26D;
     width: 100%;
@@ -54,7 +54,7 @@ body{
     border: 1px solid #3a3a3a;
  }
 
- .payment-history-btn{
+.payment-history-btn{
     color: #A1331C;
     background-color: #EFC26D;
     width: 100%;
@@ -65,12 +65,12 @@ body{
     border: 1px solid #3a3a3a;
  }
 
- .detail-info-btn:hover{
+.detail-info-btn:hover{
     color: #EFC26D;
     background-color: #A1331C;
  }
 
- .payment-history-btn:hover{
+.payment-history-btn:hover{
     color: #EFC26D;
     background-color: #A1331C;
  }

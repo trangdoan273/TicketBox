@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dXpPySsNbyJKWdWnCQauwtmb7Qt1Yd35k5Z1Si3I+vw=",
+  "Hash": "pIR/g/xe0w+9dxx3CP/QfOTXg2OUEFIVvZUvC9Vypj4=",
   "Source": "TICKETBOX",
   "BasePath": "_content/TICKETBOX",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\logo(2).png"
+    },
+    {
+      "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\assets\\Sói bảnh.jpg",
+      "SourceId": "TICKETBOX",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Trang\\TICKETBOX\\wwwroot\\",
+      "BasePath": "_content/TICKETBOX",
+      "RelativePath": "assets/Sói bảnh.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Sói bảnh.jpg"
     },
     {
       "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\css\\ForgotPassword.css",
@@ -321,6 +340,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\css\\Ticket.css",
+      "SourceId": "TICKETBOX",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Trang\\TICKETBOX\\wwwroot\\",
+      "BasePath": "_content/TICKETBOX",
+      "RelativePath": "css/Ticket.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Ticket.css"
+    },
+    {
       "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\css\\UserDetailProfile.css",
       "SourceId": "TICKETBOX",
       "SourceType": "Discovered",
@@ -376,25 +414,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\js\\ForgotPassword.js",
-      "SourceId": "TICKETBOX",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Trang\\TICKETBOX\\wwwroot\\",
-      "BasePath": "_content/TICKETBOX",
-      "RelativePath": "js/ForgotPassword.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\ForgotPassword.js"
     },
     {
       "Identity": "D:\\Trang\\TICKETBOX\\wwwroot\\js\\HomeClient.js",

@@ -97,3 +97,5 @@ D:\Trang\TICKETBOX\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Trang\TICKETBOX\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
 D:\Trang\TICKETBOX\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Trang\TICKETBOX\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Trang\TICKETBOX\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\Trang\TICKETBOX\obj\Debug\net8.0\TICKETBOX.sourcelink.json

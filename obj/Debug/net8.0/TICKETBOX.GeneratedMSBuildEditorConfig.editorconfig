@@ -70,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XFNlbGVjdFNob3d0aW1lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Trang/TICKETBOX/Views/Ticket/Ticket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XFRpY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Trang/TICKETBOX/Views/User/UserDetailProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyRGV0YWlsUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

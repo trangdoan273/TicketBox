@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace TICKETBOX.Controllers
 {
@@ -16,6 +18,7 @@ namespace TICKETBOX.Controllers
         {
             _logger = logger;
         }
+
         [HttpGet]
         public IActionResult SignIn()
         {
@@ -26,6 +29,32 @@ namespace TICKETBOX.Controllers
                 return RedirectToAction("Index", "Home");
             }
             return View();
+        }
+
+        public IActionResult SignInWithGoogle()
+        {
+            var properties = new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("Index", "Home")
+            };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
+
+        public async Task<IActionResult> GoogleResponse()
+        {
+            var result = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            if (!result.Succeeded || result.Principal == null)
+            {
+                return RedirectToAction("SignIn");
+            }
+            var claims = result.Principal.Identities.FirstOrDefault()?.Claims.Select(claim => new
+            {
+                claim.Issuer,
+                claim.OriginalIssuer,
+                claim.Type,
+                claim.Value
+            });
+            return RedirectToAction("Index", "Home");
         }
 
 
@@ -53,7 +82,8 @@ namespace TICKETBOX.Controllers
             using (var db = new fastticketContext())
             {
                 var existUser = await db.Users.FirstOrDefaultAsync(u => u.UserName == user.UserName && u.UserPassword == user.UserPassword);
-                if(existUser == null){
+                if (existUser == null)
+                {
                     ModelState.AddModelError(string.Empty, "Tên đăng nhập hoặc mật khẩu không đúng!");
                     return View(user);
                 }
@@ -72,8 +102,6 @@ namespace TICKETBOX.Controllers
             }
 
         }
-
-
 
         [HttpGet]
         public IActionResult SignUp()
@@ -114,10 +142,12 @@ namespace TICKETBOX.Controllers
                 return RedirectToAction("SignIn", "Account");
             }
         }
+
         public IActionResult ForgotPassword()
         {
             return View();
         }
+        
         public IActionResult ResetPassword()
         {
             return View();

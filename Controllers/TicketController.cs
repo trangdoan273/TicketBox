@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using PROJECT.Models;
 using Microsoft.EntityFrameworkCore;
+using TICKETBOX.Models.Tables;
+using TICKETBOX.Models;
+using Org.BouncyCastle.Crypto.Agreement.Srp;
+
 
 namespace PROJECT.Models
 {
@@ -13,16 +16,35 @@ namespace PROJECT.Models
         }
         public IActionResult SelectShowtimes()
         {
-            ViewData["Title"] = "Chọn Lịch Chiếu";
             return View();
         }
-         public IActionResult SelectSeat(){
-            ViewData["Title"] = "Chọn Ghế";
+
+        public IActionResult SelectSeat()
+        {
+
             return View();
-         }
-         public IActionResult SelectConcession(){
-            ViewData["Title"] = "Chọn Bỏng Nước";
+        }
+        public IActionResult SelectConcession()
+        {
+
             return View();
-         }
+        }
+
+        public IActionResult Ticket()
+        {
+            using (var db = new fastticketContext())
+            {
+                var ticket = db.Tickets.Include(t => t.Showtime)
+                .ThenInclude(s => s.Showdate)
+                .ThenInclude(sd => sd.Movie)
+                .Include(t => t.Showtime.Showdate.Room)
+                .ThenInclude(r => r.Cinema)
+                .Include(t => t.Price)
+                .ThenInclude(p => p.Seat)
+                .Include(t => t.Concession)
+                .ToList();
+                return View(ticket);
+            }
+        }
     }
 }

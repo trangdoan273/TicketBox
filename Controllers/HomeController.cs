@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using TICKETBOX.Models.Tables;
+using Microsoft.AspNetCore.Authentication.Google;
+using System.Security.Claims;
 
 namespace TICKETBOX.Controllers;
 
@@ -16,7 +18,12 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
-    [Authorize(Roles = "User")]
+
+    private string GetUserId()
+    {
+        return User.FindFirstValue(ClaimTypes.NameIdentifier);
+    }
+
     public IActionResult Index()
     {
         using (var db = new fastticketContext())

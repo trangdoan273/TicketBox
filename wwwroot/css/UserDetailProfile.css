@@ -29,7 +29,6 @@ body{
  .general-info-link{
     margin-right: 20px;
     margin-left: 20px;
-
  }
 
 .general-info-link .general-info-btn{
@@ -80,6 +79,10 @@ body{
     margin: 0 30px;
 }
 
+.user-info-wrap p{
+    margin-top: 10px;
+} 
+
 .user-info-list{
     display: flex;
     justify-content: space-between;
@@ -100,7 +103,7 @@ input{
     outline: none;
     height: 50px;
     border: 1px solid transparent;
-
+    border-radius: 8px;
 }
 
 .change-pw-link .change-pw-btn{
@@ -112,5 +115,19 @@ input{
     border: 1px solid #EFC26D;
     border-radius: 8px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.save-link .save-btn{
+    font-size: 18px;
+    font-weight: bold;
+    color: #A1331C;
+    background-color: #EFC26D;
+    padding: 5px 10px;
+    border: 1px solid #EFC26D;
+    border-radius: 8px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 50px;
 }

@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace TICKETBOX.UserController
 {
-    [Authorize(Roles = "User")]
+
     public class UserController : Controller
     {
         private readonly ILogger<UserController> _logger;
