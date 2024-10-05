@@ -19,31 +19,27 @@
 
                 <div class="movie-head">
                     <a href="#" class="movie-image">
-                        <img src="" class="movie-img">
+                        <img src="@ViewBag.SelectShowtimesInfo.MovieImage" class="movie-img">
                     </a>
                     <div class="movie-info">
-                        <p class="movie-name">200% WOLF: SÓI BẢNH</p>
-                        <p class="movie-description">Khi mong muốn sai lầm của Freddy Lupin biến anh thành người sói và gửi một yêu tinh mặt trăng tinh quái xuống Trái Đất, Freddy phải khôi phục lại trật tự vũ trụ trước khi Trái Đất và Mặt Trăng va chạm với nhau.</p>
+                        <p class="movie-name">@ViewBag.SelectShowtimesInfo.MovieName</p>
+                        <p class="movie-description">@ViewBag.SelectShowtimesInfo.Content</p>
                         <div class="movie-detail">
-                            <p class="movie-director">Đạo diễn: Alexs Stadermann</p>
-                            <p class="movie-actor">Diễn viên: IIai Swindells, Jennifer Saunders</p>
-                            <p class="movie-type">Thể loại: Animation</p>
-                            <p class="movie-showtimes">Khởi chiếu: 30/08/2024 | Thời lượng: 98 phút</p>
+                            <p class="movie-director">Đạo diễn: @ViewBag.SelectShowtimesInfo.Director</p>
+                            <p class="movie-actor">Diễn viên: @ViewBag.SelectShowtimesInfo.Actor</p>
+                            <p class="movie-type">Thể loại: @ViewBag.SelectShowtimesInfo.Genre</p>
+                            <p class="movie-showtimes">Khởi chiếu: @ViewBag.SelectShowtimesInfo.ReleaseDate | Thời lượng: @ViewBag.SelectShowtimesInfo.Duration</p>
                         </div>
                         <a asp-controller="Home" asp-action="Index" class="change-movie-link">
                             <button class="change-movie-btn">Chọn phim khác</button>
                         </a>
                     </div>
-                </div>
+                </div> 
                 <div class="date-selection">
                     <ul class="date-in-week">
-                        <li class="date"><a href="#" id="dateClick"><span class="big-size">11</span>/09 - T2</a></li>
-                        <li class="date"><a href="#"><span class="big-size">12</span>/09 - T3</a></li>
-                        <li class="date"><a href="#"><span class="big-size">13</span>/09 - T4</a></li>
-                        <li class="date"><a href="#"><span class="big-size">14</span>/09 - T5</a></li>
-                        <li class="date"><a href="#"><span class="big-size">15</span>/09 - T6</a></li>
-                        <li class="date"><a href="#"><span class="big-size">16</span>/09 - T7</a></li>
-                        <li class="date"><a href="#"><span class="big-size">17</span>/09 - CN</a></li>
+                        @foreach (var date in ViewBag.SelectShowtimesInfo.ShowDates){
+                            <li class="date"><button id="dateClick" class="date-link">@date</button></li>
+                        }
                     </ul>
                 </div>
                 <div class="cinema-selection">
@@ -56,9 +52,6 @@
                             <a href="#" class="time">
                                 <button class="time-btn">13:25 PM</button>
                             </a>
-                            <a href="#" class="time">
-                                <button class="time-btn">15:45 PM</button>
-                            </a>
                         </div>
                     </div>
                     <div class="cinema-info">
@@ -70,9 +63,6 @@
                             <a href="#" class="time">
                                 <button class="time-btn">12:05 PM</button>
                             </a>
-                            <a href="#" class="time">
-                                <button class="time-btn">14:15 PM</button>
-                            </a>
                         </div>
                     </div>
                     <div class="cinema-info">
@@ -83,9 +73,6 @@
                             </a>
                             <a href="#" class="time">
                                 <button class="time-btn">17:00 PM</button>
-                            </a>
-                            <a href="#" class="time">
-                                <button class="time-btn">21:20 PM</button>
                             </a>
                         </div>
                     </div>

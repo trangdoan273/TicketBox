@@ -66,6 +66,7 @@ body{
     align-items: center;
 }
 
+
 .date-selection .date-in-week .date{
     margin-right: 20px; 
 }
@@ -74,16 +75,19 @@ body{
     color: #A1331C;
 }
 
-.date-in-week .date a{
+.date-in-week .date button{
     color:#EFC26D;
-    font-size: 20px;
+    font-size: 25px;
+    background-color: #0D111A;
+    border: none;
+    text-decoration: underline;
 }
-.date-in-week .date a:hover{
+.date-in-week .date button:hover{
     color:#A1331C;
 }
 
-.date-in-week .date a .big-size{
-    font-size: 36px;
+.date-in-week .date button.active{
+    color:#A1331C;
 }
 
 .movie-part .cinema-selection .cinema-info{

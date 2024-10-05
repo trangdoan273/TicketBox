@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using TICKETBOX.Models.Tables;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using System.Security.Claims;
+using TICKETBOX.Models;
 
 namespace TICKETBOX.UserController
 {
@@ -17,25 +19,28 @@ namespace TICKETBOX.UserController
 
         public IActionResult UserProfile()
         {
-            var userID = User.Identity.Name; 
+            var userID = User.Identity.Name;
 
-           
+
             using (var db = new fastticketContext())
             {
-                var user = db.Users.FirstOrDefault(u => u.UserName == userID); 
+                var user = db.Users.FirstOrDefault(u => u.UserName == userID);
 
-                
+
                 if (user == null || user.UserRole == "Admin")
                 {
                     return RedirectToAction("Management", "Admin");
                 }
 
-                return View(user); 
+                return View(user);
             }
         }
 
-        public IActionResult UserDetailProfile(){
+        public IActionResult UserDetailProfile()
+        {
             return View();
         }
     }
 }
+
+

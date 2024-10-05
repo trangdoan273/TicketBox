@@ -8,4 +8,5 @@ button.addEventListener('click', function(){
         button.classList.remove('clicked');
         button.classList.add('default');
     }
-});
+}); 
+

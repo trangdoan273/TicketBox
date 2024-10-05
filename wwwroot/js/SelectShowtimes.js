@@ -1,13 +1,12 @@
-var link = document.getElementById('dateClick');
+document.addEventListener('DOMContentLoaded', function () {
+    const dateLinks = document.querySelectorAll('.date-link');
 
-link.addEventListener('click', function(event){
-    event.preventDefault();
-    
-    if(link.classList.contains('default')){
-        link.classList.remove('default');
-        link.classList.add('clicked');
-    } else {
-        link.classList.remove('clicked');
-        link.classList.add('default');
-    }
+    dateLinks.forEach(link => {
+        link.addEventListener('click', function () {
+
+            dateLinks.forEach(l => l.classList.remove('active'));
+
+            this.classList.add('active');
+        });
+    });
 });

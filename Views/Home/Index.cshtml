@@ -63,11 +63,11 @@
                                 <div class="movie-title">
                                     <a href="#" class="movie-title-link">
                                         <p class="movie-name">@movie.MovieName</p>
-                                        <p class="movie-type">@movie.Genre</p>
+                                        <p class="movie-type">Thể loại: @movie.Genre</p>
                                     </a>
                                 </div>
 
-                                <a asp-controller="Ticket" asp-action="SelectShowtimes" class="buy-ticket-link">
+                                <a asp-controller="Ticket" asp-action="SelectShowtimes" asp-route-id="@movie.MovieId" class="buy-ticket-link">
                                     <button class="buy-ticket">
                                         <i class="fa-solid fa-ticket"></i>
                                         Mua vé

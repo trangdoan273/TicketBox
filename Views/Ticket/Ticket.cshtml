@@ -17,18 +17,18 @@
 <body>
   <div class="ticket-container">
             <div class="ticket-info">
-                <p class="ticket-title">200% WOLF: SÓI BẢNH (K)
+                <p class="ticket-title">@ViewBag.TicketInfo.MovieName
                 </p>
-                <p class="ticket-detail">09/11/2024</p>
-                <p class="ticket-detail">09:25 ~ 11:03</p>
-                <p class="ticket-detail">Fast Ticket Phạm Ngọc Thạch</p>
-                <p class="ticket-detail">Ghế I5</p>
-                <p class="ticket-detail">Phòng chiếu 1</p>
-                <p class="ticket-detail">Bắp nước: Bắp nước OL AQUA COMBO</p>
-                <p class="sum">Tổng Tiền: 150.100 VND</p>
+                <p class="ticket-detail">@ViewBag.TicketInfo.ShowDates</p>
+                <p class="ticket-detail">@ViewBag.TicketInfo.Duration</p>
+                <p class="ticket-detail">@ViewBag.TicketInfo.CinemaName</p>
+                <p class="ticket-detail">Ghế @ViewBag.TicketInfo.SeatName</p>
+                <p class="ticket-detail">@ViewBag.TicketInfo.RoomName</p>
+                <p class="ticket-detail">@ViewBag.TicketInfo.ConcessionName</p>
+                <p class="sum">Tổng Tiền: @ViewBag.TicketInfo.TotalPrice VND</p>
             </div>
             <div class="movie-image">
-                <img src="" class="movie-img">
+                <img src="@ViewBag.TicketInfo.MovieImage" class="movie-img">
             </div>
         </div>
 

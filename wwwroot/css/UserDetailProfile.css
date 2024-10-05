@@ -18,7 +18,7 @@ body{
     display: flex;
     color: #EFC26D;
  }
-
+ 
  .user-profile-container .user-select{
     display: flex;
     flex-direction: column;
@@ -112,11 +112,16 @@ input{
     color: #A1331C;
     background-color: #EFC26D;
     padding: 5px 10px;
-    border: 1px solid #EFC26D;
+    border: 1px solid transparent;
     border-radius: 8px;
     justify-content: center;
     margin-top: 30px;
     margin-right: 50px;
+}
+
+.change-pw-link .change-pw-btn:hover{
+    color:#EFC26D;
+    background-color: #A1331C;
 }
 
 .save-link .save-btn{
@@ -125,9 +130,14 @@ input{
     color: #A1331C;
     background-color: #EFC26D;
     padding: 5px 10px;
-    border: 1px solid #EFC26D;
+    border: 1px solid transparent;
     border-radius: 8px;
     justify-content: center;
     margin-top: 30px;
     margin-right: 50px;
+}
+
+.save-link .save-btn:hover{
+    color:#EFC26D;
+    background-color: #A1331C;
 }
