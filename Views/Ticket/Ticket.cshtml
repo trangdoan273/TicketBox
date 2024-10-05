@@ -1,4 +1,3 @@
-@model IEnumerable<TICKETBOX.Models.Tables.Ticket>
 @{
     ViewData["Title"] = "Vé";
 }
@@ -16,25 +15,23 @@
 </head>
 
 <body>
-    @foreach (var ticket in Model)
-    {
-        <div class="ticket-container">
+  <div class="ticket-container">
             <div class="ticket-info">
-                <p class="ticket-title">@ticket.Showtime.Showdate.Movie.MovieName (@ticket.Showtime.Showdate.Movie.Label)
+                <p class="ticket-title">200% WOLF: SÓI BẢNH (K)
                 </p>
-                <p class="ticket-detail">@ticket.Showdate.Showdate1</p>
-                <p class="ticket-detail">@ticket.Showtime.StartTime ~ @ticket.Showtime.EndTime</p>
-                <p class="ticket-detail">@ticket.Showtime.Showdate.Room.Cinema.CinemaName</p>
-                <p class="ticket-detail">Ghế @ticket.Price.Seat.SeatNumb</p>
-                <p class="ticket-detail">@ticket.Showtime.Showdate.Room.RoomName</p>
-                <p class="ticket-detail">Bắp nước: @ticket.Concession.ConcessionName</p>
-                <p class="sum">Tổng Tiền: @ticket.TotalAmount VND</p>
+                <p class="ticket-detail">09/11/2024</p>
+                <p class="ticket-detail">09:25 ~ 11:03</p>
+                <p class="ticket-detail">Fast Ticket Phạm Ngọc Thạch</p>
+                <p class="ticket-detail">Ghế I5</p>
+                <p class="ticket-detail">Phòng chiếu 1</p>
+                <p class="ticket-detail">Bắp nước: Bắp nước OL AQUA COMBO</p>
+                <p class="sum">Tổng Tiền: 150.100 VND</p>
             </div>
             <div class="movie-image">
-                <img src="@ticket.Showtime.Showdate.Movie.MovieImage" class="movie-img">
+                <img src="" class="movie-img">
             </div>
         </div>
-    }
+
 </body>
 
 </html>

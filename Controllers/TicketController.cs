@@ -21,7 +21,6 @@ namespace PROJECT.Models
 
         public IActionResult SelectSeat()
         {
-
             return View();
         }
         public IActionResult SelectConcession()
@@ -30,21 +29,22 @@ namespace PROJECT.Models
             return View();
         }
 
-        public IActionResult Ticket()
+        public IActionResult Ticket(int id)
         {
-            using (var db = new fastticketContext())
-            {
-                var ticket = db.Tickets.Include(t => t.Showtime)
-                .ThenInclude(s => s.Showdate)
-                .ThenInclude(sd => sd.Movie)
-                .Include(t => t.Showtime.Showdate.Room)
-                .ThenInclude(r => r.Cinema)
-                .Include(t => t.Price)
-                .ThenInclude(p => p.Seat)
-                .Include(t => t.Concession)
-                .ToList();
-                return View(ticket);
-            }
+            // using (var db = new fastticketContext())
+            // {
+            //     var ticket = db.Tickets.Include(t => t.Showtime)
+            //     .ThenInclude(s => s.Showdate)
+            //     .ThenInclude(sd => sd.Movie)
+            //     .Include(t => t.Showtime.Showdate.Room)
+            //     .ThenInclude(r => r.Cinema)
+            //     .Include(t => t.Price)
+            //     .ThenInclude(p => p.Seat)
+            //     .Include(t => t.Concession)
+            //     .FirstOrDefault(t => t.TicketId == id);
+            //     return View(ticket);
+            // }
+            return View();
         }
     }
 }
